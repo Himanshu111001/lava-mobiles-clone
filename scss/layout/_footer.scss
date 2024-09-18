@@ -1,0 +1,105 @@
+.footer {
+  padding: 20px 40px;
+  background-color: #000000;
+  &-disclaimer {
+    margin-top: 20px;
+    p {
+      font-size: 14px;
+      color: #eed5d5ad;
+      line-height: 25px;
+    }
+    span {
+      color: #fff;
+    }
+  }
+}
+.footer-accordion {
+  display: flex;
+  justify-content: space-between;
+  @include respond-to(md) {
+    display: block;
+    input[type="checkbox"]:checked + label + .content {
+      max-height: 400px;
+    }
+    input[type="checkbox"]:checked + label::after {
+      content: "-";
+    }
+    .footer-accordion li:last-child .content {
+      display: flex;
+      font-size: 18px;
+    }
+  }
+  li {
+    flex: 1;
+    font-size: 16px;
+    line-height: 30px;
+    color: #fff;
+    list-style: none;
+    input[type="checkbox"] {
+      display: none;
+    }
+    label {
+      font-size: 18px;
+      cursor: pointer;
+      @include respond-to(md) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 400;
+        cursor: pointer;
+      }
+    }
+    label::after {
+      display: none;
+      @include respond-to(md) {
+        display: block;
+      }
+      content: "+";
+      margin-right: 10px;
+      font-size: 24px;
+      font-weight: 300;
+    }
+    .content {
+      @include respond-to(md) {
+        overflow: hidden;
+        max-height: 0px;
+        transition: max-height 0.5s, padding 0.5s;
+      }
+    }
+    .content p {
+      color: #ffffff9f;
+      transition: 0.1s;
+      font-size: 14px;
+      @include respond-to(md) {
+        // margin-left: 30px;
+      }
+    }
+    .content p:hover {
+      cursor: pointer;
+      color: #fff;
+    }
+  }
+}
+.footer-accordion li:last-child .content {
+  display: flex;
+  font-size: 18px;
+}
+.footer-accordion li:last-child p {
+  margin: 5px;
+}
+
+#click {
+  display: none;
+}
+.menu-btn i {
+  display: none;
+}
+
+.dashboard-menu-btn {
+  display: none;
+}
+#dashboard-click {
+  display: none;
+}

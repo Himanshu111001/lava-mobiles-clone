@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lava Mobiles</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/fcce8be489.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- HEADER start   -->
+    <header class="header-desktop">
+        <!-- DESKTOP start -->
+        <a href="/index.html">
+            <img class="logo" src="./assets/img/logo.png" alt="">
+        </a>
+        <ul class="category">
+            <li><a href="">Smartphones</a></li>
+            <li><a href="">Feature Phones</a></li>
+            <li><a href="">Accessories</a></li>
+        </ul>
+        <div class="help">
+            <p>Lava Care</p>
+            <p>Store</p>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i id="bars" onclick="openNav()" class="fa-solid fa-bars  "></i>
+            <i id="cross" onclick="closeNav()" class="fa-solid fa-x  "></i>
+        </div>
+        <!-- DESKTOP end  -->
+    </header>
+
+    <header class="header-mobile" id="mobileNav">
+        <!-- TABLET/MOBILE start  -->
+        <ul class="header-mobile__category">
+
+            <li>
+                <input type="checkbox" id="smartphone">
+                <label for="smartphone">Smartphones</label>
+                <div class="content-accordian">
+                    <div class="content">
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-smartphone-1.webp" alt="">
+                            <p>New Launches</p>
+                        </div>
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-smartphone-2.webp" alt="">
+                            <p>Blaze Series</p>
+                        </div>
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-smartphone-3.webp" alt="">
+                            <p>Yuva Series</p>
+                        </div>
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-smartphone-4.webp" alt="">
+                            <p>Storm Series</p>
+                        </div>
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-smartphone-5.webp" alt="">
+                            <p>Agni Series</p>
+                        </div>
+                    </div>
+                    <button> All Products</button>
+                </div>
+            </li>
+
+            <li>
+                <input type="checkbox" id="featurephone">
+                <label for="featurephone">Feature Phones</label>
+                <div class="content-accordian">
+                    <div class="content">
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-featurePhone-1.webp" alt="">
+                            <p>Hero 600+</p>
+                        </div>
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-featurePhone-2.webp" alt="">
+                            <p>A1 Vibe</p>
+                        </div>
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-featurePhone-3.webp" alt="">
+                            <p>A5 23</p>
+                        </div>
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-featurePhone-4.webp" alt="">
+                            <p>A7 Torch</p>
+                        </div>
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-featurePhone-5.webp" alt="">
+                            <p>Gem Power</p>
+                        </div>
+                    </div>
+                    <button> All Products</button>
+                </div>
+            </li>
+
+            <li>
+                <input type="checkbox" id="tablet">
+                <label for="tablet">Tablet & Laptops</label>
+                <div class="content-accordian">
+                    <div class="content">
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-tablet-1.webp" alt="">
+                            <p>Tablet & Laptops</p>
+                        </div>
+                    </div>
+                    <button> All Products</button>
+                </div>
+            </li>
+
+            <li>
+                <input type="checkbox" id="accessories">
+                <label for="accessories">Accessories</label>
+                <div class="content-accordian">
+                    <div class="content">
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-accessories-1.webp" alt="">
+                            <p>Smart Accessories</p>
+                        </div>
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-accessories-2.webp" alt="">
+                            <p>Basic Accessories</p>
+                        </div>
+                    </div>
+                    <button> All Products</button>
+                </div>
+            </li>
+
+            <li>Lava Care</li>
+            <li>Store</li>
+        </ul>
+        <!-- TABLET/MOBILE end  -->
+    </header>
+    <!-- HEADER end   -->
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

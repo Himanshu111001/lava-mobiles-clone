@@ -1,0 +1,24 @@
+// PARTIALS
+@import "./partials/base";
+@import "./partials/colors";
+@import "./partials/fonts";
+@import "./partials/media-queries";
+@import "./partials/mixins";
+@import "./partials/variables";
+
+// COMPONENTS
+@import "./components/button";
+@import "./components/carousel";
+@import "./components/card.scss";
+
+// LAYOUT
+@import "./layout/flex";
+@import "./layout/footer";
+@import "./layout/header";
+
+// PAGES
+@import "./pages/cart";
+@import "./pages/checkout";
+@import "./pages/home";
+@import "./pages/product-detail";
+@import "./pages/product-listing";

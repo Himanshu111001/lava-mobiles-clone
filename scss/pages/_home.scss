@@ -1,0 +1,233 @@
+// PARTIALS
+@import "../partials/base";
+@import "../partials/colors";
+@import "../partials/fonts";
+@import "../partials/media-queries";
+@import "../partials/mixins";
+@import "../partials/variables";
+
+// BANNER VIDEO START
+.hero {
+  padding-bottom: 50px;
+  @include respond-to(md) {
+    padding-bottom: 0px;
+  }
+  &__video-container {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 21/9;
+    @include respond-to(md) {
+      aspect-ratio: 4/5;
+    }
+    video {
+      position: absolute;
+      top: 0;
+      @include widthHeight(100%, 100%);
+      object-fit: cover;
+      object-position: center;
+    }
+    .vid-mobile {
+      display: none;
+      @include respond-to(md) {
+        display: block;
+      }
+    }
+    .vid-desktop {
+      @include respond-to(md) {
+        display: none;
+      }
+    }
+  }
+}
+// BANNER VIDEO end
+
+// NEW LAUNCH start
+
+.new-launch {
+  &__title {
+    @include title();
+  }
+  background-color: $col-section-bg;
+  padding: 10% 3%;
+  &__cards {
+    @include flex(row);
+    gap: 3%;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+  }
+  &__cards::-webkit-scrollbar {
+    display: none;
+  }
+  &__card {
+    @include flex(column);
+    @include widthHeight(280px, 100%);
+    flex-shrink: 0;
+    gap: 10px;
+    &--img {
+      @include widthHeight(100%, 100%);
+      padding: 20px 30px 0px 30px;
+      background-color: $col-white;
+      img {
+        @include widthHeight(100%, 100%);
+        transition: all 0.2s ease;
+      }
+    }
+    &--description {
+      padding: 20px;
+      background-color: $col-white;
+    }
+    .description-title {
+      color: $secondary-text-color;
+      font-size: $font-lg;
+    }
+    .description-detail {
+      @include flex(row);
+      align-items: center;
+      color: $secondary-text-color;
+      font-size: $font-sm;
+    }
+  }
+  &__card:hover img {
+    transform: scale(1.1);
+  }
+  &__card:hover a {
+    color: $primary-text-color;
+  }
+}
+
+// NEW LAUNCH end
+
+// BANNER IMAGE end
+
+.banner {
+  @include maxWidthHeight;
+  &__item {
+    position: relative;
+    @include maxWidthHeight;
+    padding-top: 20px;
+    &--img {
+      position: relative;
+      @include maxWidthHeight;
+      aspect-ratio: 21/9;
+      @include respond-to(md) {
+        aspect-ratio: 4/5;
+      }
+      .desktop-banner--img {
+        position: absolute;
+        @include maxWidthHeight;
+        @include respond-to(md) {
+          display: none;
+        }
+      }
+      .mobile-banner--img {
+        display: none;
+        position: absolute;
+        @include maxWidthHeight;
+        @include respond-to(md) {
+          display: block;
+        }
+      }
+    }
+    &--overlay {
+      @include maxWidthHeight;
+      @include flex(row);
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      padding-left: 2%;
+      @include respond-to(md) {
+        padding-top: 40px;
+        align-items: start;
+      }
+    }
+    .overlay-title {
+      font-size: $font-xl;
+    }
+    .overlay-detail {
+      font-weight: $font-light;
+      color: $secondary-text-color;
+    }
+    .overlay-btn {
+      @extend %button-rounded;
+      background-color: transparent;
+      border: 1px solid $secondary-text-color;
+      margin-top: 20px;
+      @include respond-to(md) {
+        background-color: $primary-text-color;
+        color: $col-white;
+      }
+    }
+    .overlay-btn:hover {
+      background-color: $primary-text-color;
+      color: $col-white;
+    }
+  }
+}
+
+// BANNER IMAGE end
+
+// SERVICE start
+
+.service {
+  padding: 8% 3%;
+  &__card {
+    @include flex(row);
+    @include respond-to(md) {
+      @include flex(column);
+    }
+    background-color: $col-section-bg;
+    border-radius: $border-radius;
+    &--img {
+      @include widthHeight(50%, 100%);
+      @include respond-to(md) {
+        @include widthHeight(100%, 100%);
+        aspect-ratio: 16/9;
+      }
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      img {
+        @include maxWidthHeight;
+        @include respond-to(md) {
+          @include widthHeight(100%, 100%);
+          border-radius: 8px 8px 0px 0px;
+        }
+        position: absolute;
+        border-radius: 8px 0px 0px 8px;
+      }
+    }
+    &--details {
+      @include widthHeight(50%, auto);
+      @include flex(row);
+      @include respond-to(md) {
+        @include widthHeight(100%, 100%);
+        justify-content: center;
+        padding: 20px;
+      }
+      align-items: center;
+    }
+    &--detail {
+      padding-left: 5%;
+      &-title {
+        font-size: $font-xl;
+      }
+      &-tag-line {
+        font-size: $font-md;
+      }
+      &-btn {
+        margin-top: 20px;
+        background-color: transparent;
+        border: 1px solid $secondary-text-color;
+        @extend %button-rounded;
+      }
+      &-btn:hover {
+        background-color: $primary-text-color;
+        color: $col-white;
+      }
+    }
+  }
+}
+
+// SERVICE end

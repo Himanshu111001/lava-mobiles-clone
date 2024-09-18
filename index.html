@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lava Mobiles</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/fcce8be489.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- HEADER start   -->
+    <header class="header-desktop">
+        <!-- DESKTOP start -->
+        <a href="/index.html">
+            <img class="logo" src="./assets/img/logo.png" alt="">
+        </a>
+        <ul class="category">
+            <li>
+                <a href="">Smartphones</a>
+                <div class="dropdown-wrapper">
+                    <ul class="dropdown">
+                        <li class="dropdown-item">
+                            <img src="./assets/img/mobile-card-smartphone-1.webp" alt="">
+                            <p>New Launches</p>
+                        </li>
+                        <li class="dropdown-item">
+                            <img src="./assets/img/mobile-card-smartphone-2.webp" alt="">
+                            <p>Blaze Series</p>
+                        </li>
+                        <li class="dropdown-item">
+                            <img src="./assets/img/mobile-card-smartphone-3.webp" alt="">
+                            <p>Yuva Series</p>
+                        </li>
+                        <li class="dropdown-item">
+                            <img src="./assets/img/mobile-card-smartphone-4.webp" alt="">
+                            <p>Storm Series</p>
+                        </li>
+                        <li class="dropdown-item">
+                            <img src="./assets/img/mobile-card-smartphone-5.webp" alt="">
+                            <p>Agni Series</p>
+                        </li>
+                    </ul>
+                    <div class="dropdown-btn">
+                        <button>All Products</button>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="">Feature Phones</a>
+                <div class="dropdown-wrapper">
+                    <ul class="dropdown">
+                        <li class="dropdown-item">
+                            <img src="./assets/img/mobile-card-featurePhone-1.webp" alt="">
+                            <p>Hero 600+</p>
+                        </li>
+                        <li class=" dropdown-item">
+                            <img src="./assets/img/mobile-card-featurePhone-2.webp" alt="">
+                            <p>A1 Vibe</p>
+                        </li>
+                        <li class="dropdown-item">
+                            <img src="./assets/img/mobile-card-featurePhone-3.webp" alt="">
+                            <p>A5 23</p>
+                        </li>
+                        <li class="dropdown-item">
+                            <img src="./assets/img/mobile-card-featurePhone-4.webp" alt="">
+                            <p>A7 Torch</p>
+                        </li>
+                        <li class="dropdown-item">
+                            <img src="./assets/img/mobile-card-featurePhone-5.webp" alt="">
+                            <p>Gem Power</p>
+                        </li>
+                    </ul>
+                    <div class="dropdown-btn">
+                        <button>All Products</button>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="">Accessories</a>
+                <div class="dropdown-wrapper">
+                    <ul class="dropdown">
+                        <li class="dropdown-item">
+                            <img src="./assets/img/mobile-card-accessories-1.webp" alt="">
+                            <p>Smart Accessories</p>
+                        </li>
+                        <li class="dropdown-item">
+                            <img src="./assets/img/mobile-card-accessories-2.webp" alt="">
+                            <p>Basic Accessories</p>
+                        </li>
+                    </ul>
+                    <div class="dropdown-btn">
+                        <button>All Products</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="help">
+            <p>Lava Care</p>
+            <p>Store</p>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i id="bars" onclick="openNav()" class="fa-solid fa-bars  "></i>
+            <i id="cross" onclick="closeNav()" class="fa-solid fa-x  "></i>
+        </div>
+        <!-- DESKTOP end  -->
+    </header>
+
+    <header class="header-mobile" id="mobileNav">
+        <!-- TABLET/MOBILE start  -->
+        <ul class="header-mobile__category">
+
+            <li>
+                <input type="checkbox" id="smartphone">
+                <label for="smartphone">Smartphones</label>
+                <div class="content-accordian">
+                    <div class="content">
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-smartphone-1.webp" alt="">
+                            <p>New Launches</p>
+                        </div>
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-smartphone-2.webp" alt="">
+                            <p>Blaze Series</p>
+                        </div>
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-smartphone-3.webp" alt="">
+                            <p>Yuva Series</p>
+                        </div>
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-smartphone-4.webp" alt="">
+                            <p>Storm Series</p>
+                        </div>
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-smartphone-5.webp" alt="">
+                            <p>Agni Series</p>
+                        </div>
+                    </div>
+                    <div class="content-accordian-btn">
+                        <button> All Products</button>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <input type="checkbox" id="featurephone">
+                <label for="featurephone">Feature Phones</label>
+                <div class="content-accordian">
+                    <div class="content">
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-featurePhone-1.webp" alt="">
+                            <p>Hero 600+</p>
+                        </div>
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-featurePhone-2.webp" alt="">
+                            <p>A1 Vibe</p>
+                        </div>
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-featurePhone-3.webp" alt="">
+                            <p>A5 23</p>
+                        </div>
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-featurePhone-4.webp" alt="">
+                            <p>A7 Torch</p>
+                        </div>
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-featurePhone-5.webp" alt="">
+                            <p>Gem Power</p>
+                        </div>
+                    </div>
+                    <div class="content-accordian-btn">
+                        <button> All Products</button>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <input type="checkbox" id="tablet">
+                <label for="tablet">Tablet & Laptops</label>
+                <div class="content-accordian">
+                    <div class="content">
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-tablet-1.webp" alt="">
+                            <p>Tablet & Laptops</p>
+                        </div>
+                    </div>
+                    <div class="content-accordian-btn">
+                        <button> All Products</button>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <input type="checkbox" id="accessories">
+                <label for="accessories">Accessories</label>
+                <div class="content-accordian">
+                    <div class="content">
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-accessories-1.webp" alt="">
+                            <p>Smart Accessories</p>
+                        </div>
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-accessories-2.webp" alt="">
+                            <p>Basic Accessories</p>
+                        </div>
+                    </div>
+                    <div class="content-accordian-btn">
+                        <button> All Products</button>
+                    </div>
+                </div>
+            </li>
+
+            <li>Lava Care</li>
+            <li>Store</li>
+        </ul>
+        <!-- TABLET/MOBILE end  -->
+    </header>
+    <!-- HEADER end   -->
+
+    <!-- BANNER VIDEO start  -->
+
+    <div class="hero">
+        <div class="hero__video-container">
+            <video autoplay muted loop class="vid-desktop" src="/assets/video/video6-landscape.mp4"></video>
+            <video autoplay muted loop class="vid-mobile" src="/assets/video/video6-portrait.mp4"></video>
+        </div>
+    </div>
+
+    <!-- BANNER VIDEO end  -->
+
+    <!-- NEW LAUNCH start  -->
+
+    <div class="new-launch">
+        <p class="new-launch__title">New Launches</p>
+        <div class="new-launch__cards">
+
+            <!-- CARD 1 start  -->
+            <div class="new-launch__card">
+                <div class="new-launch__card--img">
+                    <a href="/landing-page.html">
+                        <img src="./assets/img/new-launch1.webp" alt="">
+                    </a>
+                </div>
+                <div class="new-launch__card--description">
+                    <a href="/landing-page.html" class="description-title">Blaze 3 5G</a>
+                    <a href="/landing-page.html" class="description-detail">
+                        Segment First VIBE Light | Lightning Fas...
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- CARD 1 end  -->
+
+            <!-- CARD 2 start  -->
+            <div class="new-launch__card">
+                <div class="new-launch__card--img">
+                    <a href="/landing-page.html">
+                        <img src="./assets/img/new-launch2.webp" alt="">
+                    </a>
+                </div>
+                <div class="new-launch__card--description">
+                    <a href="/landing-page.html" class="description-title">Blaze X</a>
+                    <a href="/landing-page.html" class="description-detail">
+                        Segment First 3D Curved AMOLED Display |...
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- CARD 2 end  -->
+
+            <!-- CARD 3 start  -->
+            <div class="new-launch__card">
+                <div class="new-launch__card--img">
+                    <a href="/landing-page.html">
+                        <img src="./assets/img/new-launch3.webp" alt="">
+                    </a>
+                </div>
+                <div class="new-launch__card--description">
+                    <a href="/landing-page.html" class="description-title">Yuva 5G</a>
+                    <a href="/landing-page.html" class="description-detail">
+                        Lightning-fast Performance UNISOC T750 5...
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- CARD 3 end  -->
+
+            <!-- CARD 4 start  -->
+            <div class="new-launch__card">
+                <div class="new-launch__card--img">
+                    <a href="/landing-page.html">
+                        <img src="./assets/img/new-launch4.webp" alt="">
+                    </a>
+                </div>
+                <div class="new-launch__card--description">
+                    <a href="/landing-page.html" class="description-title">O2</a>
+                    <a href="/landing-page.html" class="description-detail">
+                        8GB+ 8GB* RAM / 128GB UFS 2.2 ROM | Octa...
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- CARD 4 end  -->
+
+            <!-- CARD 5 start  -->
+            <div href="/landing-page.html" class="new-launch__card">
+                <div class="new-launch__card--img">
+                    <a href="/landing-page.html">
+                        <img src="./assets/img/new-launch5.webp" alt="">
+                    </a>
+                </div>
+                <div class="new-launch__card--description">
+                    <a href="/landing-page.html" class="description-title">Yuva 3</a>
+                    <a href="/landing-page.html" class="description-detail">
+                        4GB+4GB*RAM | 128GB UFS 2.2 ROM | UNIS...
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- CARD 5 end  -->
+
+            <!-- CARD 6 start  -->
+            <div href="/landing-page.html" class="new-launch__card">
+                <div class="new-launch__card--img">
+                    <a href="/landing-page.html">
+                        <img src="./assets/img/new-launch6.webp" alt="">
+                    </a>
+                </div>
+                <div class="new-launch__card--description">
+                    <a href="/landing-page.html" class="description-title">Blaze Curve</a>
+                    <a href="/landing-page.html" class="description-detail">
+                        16.94 cm (6.67") 120 Hz Punch Hole 3D Cu...
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- CARD 6 end  -->
+
+
+        </div>
+    </div>
+
+    <!-- NEW LAUNCH end  -->
+
+    <!-- BANNER IMAGE start  -->
+
+    <div class="banner">
+
+        <!-- ITEM 1 start  -->
+        <div class="banner__item">
+            <div class="banner__item--img">
+                <img class="desktop-banner--img" src="./assets/img/home-banner1.jpg" alt="">
+                <img class="mobile-banner--img" src="./assets/img/mobile-home-banner1.jpg" alt="">
+            </div>
+            <div class="banner__item--overlay">
+                <div class="banner__item--overlay-content">
+                    <p class="overlay-title">BLAZE X</p>
+                    <p class="overlay-detail">SEGEMENT FIRST 5G 3D CURVED AMOLED DISPLAY*</p>
+                    <button class="overlay-btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <!-- ITEM 1 end  -->
+
+        <!-- ITEM 2 start  -->
+        <div class="banner__item">
+            <div class="banner__item--img">
+                <img class="desktop-banner--img" src="./assets/img/home-banner2.jpg" alt="">
+                <img class="mobile-banner--img" src="./assets/img/mobile-home-banner2.jpg" alt="">
+            </div>
+            <div class="banner__item--overlay">
+                <div class="banner__item--overlay-content">
+                    <p class="overlay-title">YUVA 5G</p>
+                    <p class="overlay-detail">YUVA AB BANEGA 5G</p>
+                    <button class="overlay-btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <!-- ITEM 2 end  -->
+
+        <!-- ITEM 3 start  -->
+        <div class="banner__item">
+            <div class="banner__item--img">
+                <img class="desktop-banner--img" src="./assets/img/home-banner3.jpg" alt="">
+                <img class="mobile-banner--img" src="./assets/img/mobile-home-banner3.jpg" alt="">
+            </div>
+            <div class="banner__item--overlay">
+                <div class="banner__item--overlay-content">
+                    <p class="overlay-title">AGNI 2</p>
+                    <p class="overlay-detail">AHEAD OF THE CURVE</p>
+                    <button class="overlay-btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <!-- ITEM 3 end  -->
+
+    </div>
+
+    <!-- BANNER IMAGE end  -->
+
+    <!-- SERVICE start   -->
+
+    <div class="service">
+        <div class="service__card">
+            <div class="service__card--img">
+                <img src="./assets/img/service.webp" alt="">
+            </div>
+            <div class="service__card--details">
+                <div class="service__card--detail">
+                    <p class="service__card--detail-title">FREE REPLACEMENT <br> AT HOME</p>
+                    <p class="service__card--detail-tag-line">FREE SERVICE @HOME</p>
+                    <button class="service__card--detail-btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICE end   -->
+
+    <!-- FOOTER start -->
+
+    <footer class="footer">
+        <ul class="footer-accordion">
+            <li>
+                <input type="checkbox" name="footer-accordion" id="support" checked>
+                <label for="support">Support</label>
+                <div class="content">
+                    <p>Contact Us</p>
+                    <p>Sales Enquiry</p>
+                    <p>Stores & Dealers</p>
+                    <p>Careers</p>
+                    <p>Terms & Conditions</p>
+                    <p>Privacy Policy</p>
+                    <p>Quality Policy</p>
+                </div>
+            </li>
+
+            <li>
+                <input type="checkbox" name="footer-accordion" id="about">
+                <label for="about">About Us</label>
+                <div class="content">
+                    <p>About Lava</p>
+                    <p>Videos</p>
+                    <p>Press & Media</p>
+                    <p>Speak Up</p>
+                    <p>Investor Relations</p>
+                    <p>FAQ’s</p>
+                </div>
+            </li>
+
+            <li>
+                <input type="checkbox" name="footer-accordion" id="care">
+                <label for="care">Lava Care</label>
+                <div class="content">
+                    <p>Service@Home</p>
+                    <p>Extended Warranty</p>
+                    <p>Spare Parts Price List</p>
+                    <p>User Manual</p>
+                    <p>E-waste Management</p>
+                    <p>Alumni</p>
+                    <p>CSR Policy</p>
+                </div>
+            </li>
+
+            <li>
+                <input type="checkbox" name="footer-accordion" id="follow">
+                <label for="follow">Follow Us</label>
+                <div class="content">
+                    <p> <i class="fa-brands fa-instagram"></i></p>
+                    <p> <i class="fa-brands fa-facebook"></i></p>
+                    <p> <i class="fa-brands fa-linkedin"></i></p>
+                    <p> <i class="fa-brands fa-x-twitter"></i></p>
+                    <p><i class="fa-brands fa-youtube"></i></p>
+                </div>
+            </li>
+        </ul>
+        <div class="footer-disclaimer">
+            <p><span>Disclaimer:</span>Product images, features, colors and specifications shown here are for
+                representational purpose
+                only and the
+                actual may vary. <span>Copyright © Lava International Limited</span></p>
+            <p>'LAVA' is a registered trademark, wholly owned by M/s Lava International Limited. Any imitation of
+                trademark
+                and/or
+                label is illegal and is a punishable offence.</p>
+        </div>
+    </footer>
+
+    <!-- FOOTER end -->
+
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
