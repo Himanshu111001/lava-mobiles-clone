@@ -1,0 +1,359 @@
+.landing-page {
+  position: absolute;
+  top: 126px;
+}
+
+// LANDING PAGE BANNER start
+.landing-banner {
+  background: $col-black;
+  // background: yellow;
+  &__item1 {
+    position: relative;
+    aspect-ratio: 16/9;
+    img {
+      @include maxWidthHeight;
+      position: absolute;
+      top: 0;
+    }
+  }
+  &__item2 {
+    padding: 0% 5%;
+    @include maxWidthHeight;
+    &-row1 {
+      @include flex(row);
+      &-img {
+        @include widthHeight(33.33%, 100%);
+        img {
+          @include widthHeight(100%, auto);
+        }
+      }
+    }
+    &-row2 {
+      @include flex(row);
+      &-img {
+        @include widthHeight(auto, 100%);
+        img {
+          @include widthHeight(100%, auto);
+        }
+      }
+    }
+  }
+  &__item3 {
+    position: relative;
+    img {
+      display: block;
+      width: 100%;
+    }
+    p {
+      @include flex(row);
+      width: 100%;
+      justify-content: center;
+      position: absolute;
+      top: 15%;
+      // left: 35%;
+      font-size: $font-2xl;
+      color: $col-white;
+      font-weight: $font-light;
+      span {
+        font-weight: $font-semi-bold;
+      }
+    }
+    &-overlay {
+      img {
+        position: absolute;
+        top: 28%;
+        left: 21%;
+        width: 55%;
+      }
+    }
+  }
+  &__item4 {
+    position: relative;
+    img {
+      width: 100%;
+      display: block;
+    }
+    &-overlay {
+      img {
+        position: absolute;
+        top: 22%;
+        left: 21%;
+        width: 55%;
+      }
+    }
+  }
+  &__item5 {
+    position: relative;
+    img {
+      width: 100%;
+      display: block;
+    }
+    &-overlay {
+      img {
+        position: absolute;
+        top: 22%;
+        left: 10%;
+        width: 30%;
+      }
+      p {
+        position: absolute;
+        top: 45%;
+        left: 10%;
+        width: 30%;
+        font-size: $font-xl;
+        color: $col-white;
+        font-weight: $font-light;
+        span {
+          font-weight: $font-semi-bold;
+        }
+      }
+    }
+  }
+  &__item6 {
+    img {
+      width: 100%;
+    }
+  }
+  &__item7 {
+    img {
+      width: 100%;
+    }
+  }
+  &__item8 {
+    position: relative;
+    img {
+      width: 100%;
+    }
+    &-overlay {
+      p {
+        position: absolute;
+        top: 22%;
+        left: 50%;
+        width: 35%;
+        font-size: $font-2xl;
+        color: $col-white;
+        font-weight: $font-light;
+        span {
+          font-weight: $font-semi-bold;
+        }
+      }
+    }
+  }
+  &__item9 {
+    position: relative;
+    img {
+      width: 100%;
+    }
+    &-overlay {
+      p {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        width: 35%;
+        font-size: $font-2xl;
+        color: $col-white;
+        font-weight: $font-light;
+        span {
+          font-weight: $font-semi-bold;
+        }
+      }
+    }
+  }
+  &__item10 {
+    position: relative;
+    img {
+      width: 100%;
+    }
+    &-overlay {
+      p {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        width: 35%;
+        font-size: $font-2xl;
+        color: $col-white;
+        font-weight: $font-light;
+        span {
+          font-weight: $font-semi-bold;
+        }
+      }
+    }
+  }
+  &__item11 {
+    position: relative;
+    img {
+      display: block;
+      width: 100%;
+    }
+    p {
+      @include flex(row);
+      width: 100%;
+      justify-content: center;
+      position: absolute;
+      top: 10%;
+      // left: 35%;
+      font-size: $font-2xl;
+      color: $col-white;
+      font-weight: $font-light;
+      span {
+        font-weight: $font-semi-bold;
+      }
+    }
+  }
+  &__item12 {
+    img {
+      width: 100%;
+    }
+  }
+  &__item13 {
+    position: relative;
+    img {
+      width: 100%;
+    }
+    &-overlay {
+      p {
+        position: absolute;
+        top: 20%;
+        left: 60%;
+        width: 35%;
+        font-size: $font-2xl;
+        color: $col-white;
+        font-weight: $font-light;
+        span {
+          font-weight: $font-semi-bold;
+        }
+      }
+    }
+  }
+  &__item14 {
+    position: relative;
+    img {
+      display: block;
+      width: 100%;
+    }
+    p {
+      @include flex(row);
+      width: 100%;
+      justify-content: center;
+      position: absolute;
+      top: 10%;
+      // left: 35%;
+      font-size: $font-2xl;
+      color: $col-white;
+      font-weight: $font-light;
+      span {
+        font-weight: $font-semi-bold;
+      }
+    }
+  }
+  &__item15 {
+    position: relative;
+    img {
+      width: 100%;
+    }
+    &-overlay {
+      p {
+        position: absolute;
+        top: 35%;
+        left: 10%;
+        width: 35%;
+        font-size: $font-2xl;
+        color: $col-white;
+        font-weight: $font-light;
+        span {
+          font-weight: $font-semi-bold;
+        }
+      }
+    }
+  }
+  &__item16 {
+    img {
+      width: 100%;
+    }
+  }
+}
+// LANDING PAGE BANNER end
+
+// DETAILDED SPECS start
+
+.detailed-specs {
+  &__title {
+    @include title();
+    text-align: center;
+    color: $lava-red-text-color;
+  }
+  &__accordian {
+    @include flex(column);
+    gap: 10px;
+    padding: 0% 10%;
+    li {
+      input {
+        display: none;
+      }
+      input:checked ~ .accordian-content {
+        max-height: 800px;
+        border-bottom: 1px solid $col-border;
+      }
+      input:checked + label::after {
+        content: "-";
+      }
+      input:checked + label {
+        border: none;
+      }
+      label {
+        @include flex(row);
+        justify-content: space-between;
+        color: $col-black;
+        font-size: $font-lg;
+        font-weight: $font-semi-bold;
+        padding: 10px 0px;
+        cursor: pointer;
+        border-bottom: 1px solid $col-border;
+      }
+      label::after {
+        content: "+";
+      }
+      .accordian-content {
+        max-height: 0px;
+        overflow: hidden;
+        transition: all 0.5s ease;
+        &-item {
+          @include flex(row);
+          justify-content: space-between;
+          line-height: 40px;
+          h4 {
+            font-weight: $font-semi-bold;
+            flex: 1;
+          }
+          p {
+            flex: 2;
+          }
+        }
+      }
+    }
+  }
+}
+
+// DETAILDED SPECS end
+
+// Gallery start
+
+.gallery {
+  padding-bottom: 5%;
+  &__title {
+    @include title();
+    color: $lava-red-text-color;
+    text-align: center;
+  }
+  &__main {
+    display: flex;
+    justify-content: center;
+  }
+  &__sub {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
+
+// Gallery end

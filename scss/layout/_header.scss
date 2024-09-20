@@ -6,7 +6,7 @@
   @include flex(row);
   justify-content: space-between;
   align-items: center;
-  padding: 20px 10px;
+  padding: 20px 40px;
   background: $col-transparent-gray;
   @include respond-to(lg) {
     padding: 20px 2%;
@@ -119,8 +119,9 @@
     left: 0;
     transition: top 0.5s ease;
     background-color: $col-white;
-    z-index: 2;
+    z-index: 5;
     overflow-y: scroll;
+    padding-bottom: 100px;
     &__category {
       @include flex(column);
       gap: 5px;
@@ -202,3 +203,51 @@
 }
 
 //MOBILE NAVBAR end
+
+//LANDING PAGE HEADER start
+
+.header-landing {
+  z-index: 1;
+  @include widthHeight(100%, auto);
+  @include flex(row);
+  justify-content: space-between;
+  position: fixed;
+  top: 64px;
+  left: 0;
+  padding: 15px 40px;
+  background: linear-gradient(
+      0deg,
+      hsla(0, 0%, 100%, 0.9),
+      hsla(0, 0%, 100%, 0.9)
+    ),
+    rgba(44, 43, 43, 0.715);
+  &__logo {
+    p {
+      font-size: $font-lg;
+      color: $lava-red-text-color;
+    }
+  }
+  &__cta {
+    button {
+      @extend %button-elipse;
+    }
+    &-shop {
+      background-color: $primary-text-color;
+      color: $col-white;
+    }
+    &-buy {
+      background-color: $primary-text-color;
+      color: $col-white;
+    }
+    &-overview {
+      border: 1px solid $primary-text-color !important;
+      background-color: $col-white;
+    }
+    &-specs {
+      border: 1px solid $secondary-text-color !important;
+      background-color: transparent;
+    }
+  }
+}
+
+//LANDING PAGE HEADER end
