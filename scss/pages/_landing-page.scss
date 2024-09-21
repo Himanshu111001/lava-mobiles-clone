@@ -1,10 +1,16 @@
 .landing-page {
   position: absolute;
   top: 126px;
+  @include respond-to(md) {
+    top: 206px;
+  }
 }
 
 // LANDING PAGE BANNER start
 .landing-banner {
+  @include respond-to(lg) {
+    display: none;
+  }
   background: $col-black;
   // background: yellow;
   &__item1 {
@@ -50,13 +56,15 @@
       justify-content: center;
       position: absolute;
       top: 15%;
-      // left: 35%;
       font-size: $font-2xl;
       color: $col-white;
       font-weight: $font-light;
       span {
         font-weight: $font-semi-bold;
       }
+      // @include respond-to(lg) {
+      //   font-size: 40px;
+      // }
     }
     &-overlay {
       img {
@@ -272,6 +280,22 @@
     }
   }
 }
+
+// LANDING BANNER MOBILE start
+
+.landing-banner-mobile {
+  display: none;
+  img {
+    width: 100%;
+    display: block;
+  }
+  @include respond-to(lg) {
+    display: block;
+  }
+}
+
+// LANDING BANNER MOBILE start
+
 // LANDING PAGE BANNER end
 
 // DETAILDED SPECS start
@@ -348,11 +372,17 @@
   &__main {
     display: flex;
     justify-content: center;
+    img {
+      @include respond-to(lg) {
+        width: 100%;
+      }
+    }
   }
   &__sub {
     display: flex;
     justify-content: center;
     cursor: pointer;
+    flex-wrap: wrap;
   }
 }
 

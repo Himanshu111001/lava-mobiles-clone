@@ -211,6 +211,11 @@
   @include widthHeight(100%, auto);
   @include flex(row);
   justify-content: space-between;
+  @include respond-to(md) {
+    padding: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
   position: fixed;
   top: 64px;
   left: 0;
@@ -228,6 +233,11 @@
     }
   }
   &__cta {
+    @include respond-to(md) {
+      @include flex(row);
+      flex-wrap: wrap;
+      gap: 10px;
+    }
     button {
       @extend %button-elipse;
     }
