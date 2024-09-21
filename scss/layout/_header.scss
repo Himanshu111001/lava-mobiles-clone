@@ -1,7 +1,7 @@
 //DESKTOP NAVBAR start
 .header-desktop {
   position: fixed;
-  z-index: 2;
+  z-index: 9;
   @include widthHeight(100%, 64px);
   @include flex(row);
   justify-content: space-between;
