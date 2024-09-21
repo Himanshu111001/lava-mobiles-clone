@@ -9,6 +9,7 @@
   padding: 20px 40px;
   background: $col-transparent-gray;
   @include respond-to(lg) {
+    z-index: 9;
     padding: 20px 2%;
     background-color: $col-white;
   }
