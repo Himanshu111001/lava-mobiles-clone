@@ -1,0 +1,118 @@
+.product-detail {
+  position: absolute;
+  top: 56px;
+  width: 100%;
+  padding: 10% 5%;
+  @include flex(row);
+  @include respond-to(lg) {
+    @include flex(column);
+  }
+  @include respond-to(sm) {
+    padding: 5% 0%;
+  }
+  &__gallery {
+    width: 50%;
+    @include respond-to(lg) {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  &__info {
+    @include respond-to(lg) {
+      width: 100%;
+    }
+    @include respond-to(sm) {
+      padding: 8%;
+    }
+    background-color: $bg-product-detail;
+    width: 50%;
+    padding: 2%;
+    &--title {
+      font-size: $font-xl;
+    }
+    &--selling {
+      padding-top: 10px;
+      font-size: $font-xl;
+      color: $lava-red-text-color;
+    }
+    &--prices {
+      @include flex(row);
+      align-items: center;
+      padding-bottom: 15px;
+      color: $light-text-color;
+      font-size: $font-md + 2px;
+      font-weight: $font-light;
+      border-bottom: 1px solid $col-border;
+      &-original {
+        span {
+          text-decoration: line-through;
+          margin-left: 15px;
+        }
+      }
+      &-discount {
+        font-weight: $font-normal;
+        padding: 2px 10px;
+        background-color: $light-text-color;
+        color: $col-white;
+        border-radius: $border-radius;
+        margin-left: 15px;
+      }
+    }
+    &--specs {
+      padding: 10% 5%;
+      border-bottom: 1px solid $col-border;
+      li {
+        list-style: disc;
+        line-height: 30px;
+        color: $light-text-color;
+        font-weight: $font-light;
+      }
+    }
+    &--availability {
+      p {
+        padding: 10px 0px;
+      }
+      input {
+        width: 70%;
+        padding: 10px;
+      }
+      button {
+        @extend %button;
+        padding: 10px 20px;
+        font-weight: $font-semi-bold;
+      }
+    }
+    &--quantity {
+      padding-top: 20px;
+      color: $lava-red-text-color;
+    }
+    &--terms {
+      @include flex(row);
+      p {
+        margin-left: 10px;
+        span {
+          text-decoration: underline;
+          color: $lava-red-text-color;
+        }
+      }
+    }
+    &--cta {
+      padding: 20px 0px;
+      button {
+        width: 100%;
+        padding: 10px 20px;
+        background-color: $col-white;
+        border: 1px solid #000;
+        font-weight: $font-semi-bold;
+        font-size: $font-md;
+        @extend %button;
+      }
+      button:hover {
+        background-color: #000;
+        color: $col-white;
+      }
+    }
+  }
+}

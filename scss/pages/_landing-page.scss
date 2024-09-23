@@ -1,7 +1,7 @@
 .landing-page {
   position: absolute;
   top: 126px;
-  @include respond-to(md) {
+  @include respond-to(sm) {
     top: 206px;
   }
 }
@@ -301,6 +301,10 @@
 // DETAILDED SPECS start
 
 .detailed-specs {
+  padding: 8% 0%;
+  @include respond-to(sm) {
+    padding: 45% 0%;
+  }
   &__title {
     @include title();
     text-align: center;
@@ -346,10 +350,12 @@
           justify-content: space-between;
           line-height: 40px;
           h4 {
+            padding: 10px;
             font-weight: $font-semi-bold;
             flex: 1;
           }
           p {
+            padding: 10px;
             flex: 2;
           }
         }

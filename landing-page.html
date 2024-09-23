@@ -223,10 +223,21 @@
             <p>BLAZE 3 5G</p>
         </div>
         <div class="header-landing__cta">
-            <button class="header-landing__cta-shop">Shop on Amazon</button>
-            <button class="header-landing__cta-buy">Buy Now</button>
-            <button class="header-landing__cta-overview">Overview</button>
-            <button class="header-landing__cta-specs">Specs</button>
+            <a href="https://www.amazon.in/dp/B0DFC1HFDM?th=1">
+                <button class="header-landing__cta-shop">Shop on Amazon</button>
+            </a>
+            <a href="./product-detail.html">
+                <button class="header-landing__cta-buy">Buy Now</button>
+            </a>
+            <a href="#landing-banner">
+                <button class="header-landing__cta-overview">Overview</button>
+            </a>
+            <a href="#landing-banner-mobile">
+                <button id="landing-banner-mobile-btn" class="header-landing__cta-overview">Overview</button>
+            </a>
+            <a href="#specs">
+                <button class="header-landing__cta-specs">Specs</button>
+            </a>
         </div>
     </header>
 
@@ -238,7 +249,7 @@
 
     <div class="landing-page">
 
-        <div class="landing-banner">
+        <div class="landing-banner" id="landing-banner">
             <!-- ITEM 1 start  -->
             <div class="landing-banner__item1">
                 <img src="./assets/img/landing-banner1.jpg" alt="">
@@ -409,7 +420,7 @@
         </div>
 
         <!-- LANDING BANNER MOBILE start  -->
-        <div class="landing-banner-mobile">
+        <div class="landing-banner-mobile" id="landing-banner-mobile">
             <div class="landing-banner-mobile__item">
                 <img src="./assets/img/landing-banner-mobile1.jpg" alt="">
             </div>
@@ -464,7 +475,7 @@
 
         <!-- DETAILED SPECS  start  -->
 
-        <div class="detailed-specs">
+        <div class="detailed-specs" id="specs">
             <p class="detailed-specs__title">View Detailed Specs</p>
 
             <ul class="detailed-specs__accordian">

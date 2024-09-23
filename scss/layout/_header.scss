@@ -253,12 +253,116 @@
     &-overview {
       border: 1px solid $primary-text-color !important;
       background-color: $col-white;
+      @include respond-to(lg) {
+        display: none;
+      }
     }
     &-specs {
       border: 1px solid $secondary-text-color !important;
       background-color: transparent;
     }
   }
+  #landing-banner-mobile-btn {
+    display: none;
+    @include respond-to(lg) {
+      display: inline-block;
+    }
+  }
 }
 
 //LANDING PAGE HEADER end
+
+// DETAIL PAGE HEADER start
+
+// DESKTOP start
+.header-product-detail {
+  @include respond-to(lg) {
+    display: none;
+  }
+  @include widthHeight(100%, auto);
+  @include flex(row);
+  align-items: center;
+  background-color: $bg-product-detail;
+  padding: 0% 3%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  &__logo {
+    width: 10%;
+    img {
+      @include widthHeight(80px, auto);
+    }
+  }
+  &__links {
+    width: 80%;
+    @include flex(row);
+    justify-content: space-between;
+    ul {
+      @include flex(row);
+      li {
+        padding: 20px 10px;
+        font-weight: $font-light;
+      }
+    }
+    p {
+      padding: 20px 10px;
+      font-weight: $font-light;
+    }
+  }
+  &__icons {
+    width: 10%;
+    @include flex(row);
+    justify-content: end;
+    i {
+      padding: 20px 10px;
+    }
+  }
+}
+// DESKTOP end
+
+// MOBILE start]
+
+.header-product-detail-mobile {
+  display: none;
+  @include respond-to(lg) {
+    @include flex(row);
+  }
+  @include respond-to(md) {
+    padding: 0% 2%;
+  }
+  align-items: center;
+  padding: 0% 10%;
+  width: 100%;
+  box-shadow: $box-shadow;
+  background-color: $col-white;
+  position: fixed;
+  z-index: 1;
+  &__icons {
+    @include flex(row);
+    width: 20%;
+    i {
+      padding: 20px 10px;
+    }
+  }
+  &__logo {
+    @include flex(row);
+    justify-content: center;
+    width: 60%;
+    img {
+      @include widthHeight(80px, auto);
+    }
+  }
+  &__hamburger {
+    @include flex(row);
+    justify-content: end;
+    width: 20%;
+    i {
+      padding: 20px;
+    }
+  }
+}
+
+// MOBILE end
+
+// DETAIL PAGE HEADER end
