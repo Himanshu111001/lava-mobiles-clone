@@ -121,34 +121,7 @@
     }
   }
 }
-.product-detail-footer {
-  @include flex(row);
-  @include respond-to(lg) {
-    flex-direction: column;
-    gap: 10px;
-  }
-  padding: 5%;
-  border-bottom: 1px solid $col-border;
-  ul {
-    flex: 1;
-    margin-right: 20px;
-    color: $secondary-text-color;
-    h4 {
-      font-weight: $font-semi-bold;
-    }
-    li {
-      font-size: $font-sm;
-    }
-  }
-  div {
-    display: flex;
-    img {
-      width: 25px;
-      height: 25px;
-      margin-right: 10px;
-    }
-  }
-}
+
 .product-detail-heading {
   @include flex(column);
   gap: 30px;
