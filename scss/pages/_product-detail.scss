@@ -121,15 +121,3 @@
     }
   }
 }
-
-.product-detail-heading {
-  @include flex(column);
-  gap: 30px;
-  padding: 5%;
-  p {
-    text-align: center;
-    color: $secondary-text-color;
-    font-size: $font-sm;
-    font-weight: $font-light;
-  }
-}

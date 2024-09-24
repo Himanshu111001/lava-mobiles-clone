@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAVA MOBILES product listing</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/fcce8be489.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- HEADER start   -->
+    <header class="header-desktop">
+        <!-- DESKTOP start -->
+        <a href="./index.html">
+            <img class="logo" src="./assets/img/logo.png" alt="">
+        </a>
+        <ul class="category">
+            <li>
+                <a href="./product-listing.html">Smartphones</a>
+                <div class="dropdown-wrapper">
+                    <ul class="dropdown">
+                        <li class="dropdown-item">
+                            <img src="./assets/img/mobile-card-smartphone-1.webp" alt="">
+                            <p>New Launches</p>
+                        </li>
+                        <li class="dropdown-item">
+                            <img src="./assets/img/mobile-card-smartphone-2.webp" alt="">
+                            <p>Blaze Series</p>
+                        </li>
+                        <li class="dropdown-item">
+                            <img src="./assets/img/mobile-card-smartphone-3.webp" alt="">
+                            <p>Yuva Series</p>
+                        </li>
+                        <li class="dropdown-item">
+                            <img src="./assets/img/mobile-card-smartphone-4.webp" alt="">
+                            <p>Storm Series</p>
+                        </li>
+                        <li class="dropdown-item">
+                            <img src="./assets/img/mobile-card-smartphone-5.webp" alt="">
+                            <p>Agni Series</p>
+                        </li>
+                    </ul>
+                    <div class="dropdown-btn">
+                        <button>All Products</button>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="./product-listing.html">Feature Phones</a>
+                <div class="dropdown-wrapper">
+                    <ul class="dropdown">
+                        <li class="dropdown-item">
+                            <img src="./assets/img/mobile-card-featurePhone-1.webp" alt="">
+                            <p>Hero 600+</p>
+                        </li>
+                        <li class=" dropdown-item">
+                            <img src="./assets/img/mobile-card-featurePhone-2.webp" alt="">
+                            <p>A1 Vibe</p>
+                        </li>
+                        <li class="dropdown-item">
+                            <img src="./assets/img/mobile-card-featurePhone-3.webp" alt="">
+                            <p>A5 23</p>
+                        </li>
+                        <li class="dropdown-item">
+                            <img src="./assets/img/mobile-card-featurePhone-4.webp" alt="">
+                            <p>A7 Torch</p>
+                        </li>
+                        <li class="dropdown-item">
+                            <img src="./assets/img/mobile-card-featurePhone-5.webp" alt="">
+                            <p>Gem Power</p>
+                        </li>
+                    </ul>
+                    <div class="dropdown-btn">
+                        <button>All Products</button>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="./product-listing.html">Accessories</a>
+                <div class="dropdown-wrapper">
+                    <ul class="dropdown">
+                        <li class="dropdown-item">
+                            <img src="./assets/img/mobile-card-accessories-1.webp" alt="">
+                            <p>Smart Accessories</p>
+                        </li>
+                        <li class="dropdown-item">
+                            <img src="./assets/img/mobile-card-accessories-2.webp" alt="">
+                            <p>Basic Accessories</p>
+                        </li>
+                    </ul>
+                    <div class="dropdown-btn">
+                        <button>All Products</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="help">
+            <p>Lava Care</p>
+            <p>Store</p>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i id="bars" onclick="openNav()" class="fa-solid fa-bars  "></i>
+            <i id="cross" onclick="closeNav()" class="fa-solid fa-x  "></i>
+        </div>
+        <!-- DESKTOP end  -->
+    </header>
+
+    <header class="header-mobile" id="mobileNav">
+        <!-- TABLET/MOBILE start  -->
+        <ul class="header-mobile__category">
+
+            <li>
+                <input type="checkbox" id="smartphone">
+                <label for="smartphone">Smartphones</label>
+                <div class="content-accordian">
+                    <div class="content">
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-smartphone-1.webp" alt="">
+                            <p>New Launches</p>
+                        </div>
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-smartphone-2.webp" alt="">
+                            <p>Blaze Series</p>
+                        </div>
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-smartphone-3.webp" alt="">
+                            <p>Yuva Series</p>
+                        </div>
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-smartphone-4.webp" alt="">
+                            <p>Storm Series</p>
+                        </div>
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-smartphone-5.webp" alt="">
+                            <p>Agni Series</p>
+                        </div>
+                    </div>
+                    <div class="content-accordian-btn">
+                        <button> All Products</button>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <input type="checkbox" id="featurephone">
+                <label for="featurephone">Feature Phones</label>
+                <div class="content-accordian">
+                    <div class="content">
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-featurePhone-1.webp" alt="">
+                            <p>Hero 600+</p>
+                        </div>
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-featurePhone-2.webp" alt="">
+                            <p>A1 Vibe</p>
+                        </div>
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-featurePhone-3.webp" alt="">
+                            <p>A5 23</p>
+                        </div>
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-featurePhone-4.webp" alt="">
+                            <p>A7 Torch</p>
+                        </div>
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-featurePhone-5.webp" alt="">
+                            <p>Gem Power</p>
+                        </div>
+                    </div>
+                    <div class="content-accordian-btn">
+                        <button> All Products</button>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <input type="checkbox" id="tablet">
+                <label for="tablet">Tablet & Laptops</label>
+                <div class="content-accordian">
+                    <div class="content">
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-tablet-1.webp" alt="">
+                            <p>Tablet & Laptops</p>
+                        </div>
+                    </div>
+                    <div class="content-accordian-btn">
+                        <button> All Products</button>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <input type="checkbox" id="accessories">
+                <label for="accessories">Accessories</label>
+                <div class="content-accordian">
+                    <div class="content">
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-accessories-1.webp" alt="">
+                            <p>Smart Accessories</p>
+                        </div>
+                        <div class="mobile-card">
+                            <img src="./assets/img/mobile-card-accessories-2.webp" alt="">
+                            <p>Basic Accessories</p>
+                        </div>
+                    </div>
+                    <div class="content-accordian-btn">
+                        <button> All Products</button>
+                    </div>
+                </div>
+            </li>
+
+            <li>Lava Care</li>
+            <li>Store</li>
+        </ul>
+        <!-- TABLET/MOBILE end  -->
+    </header>
+    <!-- HEADER end   -->
+
+    <!-- PRODUCT LISTING PAGE start  -->
+
+    <div class="product-listing-page">
+
+        <div class="product-listing">
+
+            <!-- PRODUCTS BANNER start  -->
+
+            <div class="product-listing__banner">
+                <img src="./assets/img/product-listing-banner-long.webp" alt="">
+                <p>Smartphones</p>
+            </div>
+
+            <!-- PRODUCTS BANNER end  -->
+
+            <!-- PRODUCTS LISTING start   -->
+
+            <div class="product-listing__products">
+
+                <!-- CARD 1 start   -->
+                <div class="product-listing__card">
+                    <div class="product-listing__card--img">
+                        <img src="./assets/img/product-listing1.webp" alt="">
+                    </div>
+                    <div class="product-listing__card--title--description">
+                        <p class="product-listing__card--title">Blaze 3 5G</p>
+                        <p class="product-listing__card--detail">
+                            Segment First VIBE Light | Lightning Fast Performance with
+                            MediaTek Di...
+                        </p>
+                        <p class="product-listing__card--selling"> ₹ 11,499</p>
+                        <div class="product-listing__card--original">
+                            <p class="product-listing__card--original-mrp">MRP (incl. of all taxes): <span>₹
+                                    12,999</span>
+                            </p>
+                            <p class="product-listing__card--original-discount">-11%</p>
+                        </div>
+                        <div class="product-listing__card--cta">
+                            <button class="learn">Learn More</button>
+                            <button class="buy">Buy</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD 1 end   -->
+
+                <!-- CARD 2 start   -->
+                <div class="product-listing__card">
+                    <div class="product-listing__card--img">
+                        <img src="./assets/img/product-listing2.webp" alt="">
+                    </div>
+                    <p class="product-listing__card--title">Blaze X</p>
+                    <p class="product-listing__card--detail">
+                        Segment First 3D Curved AMOLED Display | 64MP Sony Sensor Camera & 16M...
+                    </p>
+                    <p class="product-listing__card--selling"> ₹ 14,999</p>
+                    <div class="product-listing__card--original">
+                        <p class="product-listing__card--original-mrp">MRP (incl. of all taxes): <span>₹ 16,999</span>
+                        </p>
+                        <p class="product-listing__card--original-discount">-11%</p>
+                    </div>
+                    <div class="product-listing__card--cta">
+                        <button class="learn">Learn More</button>
+                        <button class="buy">Buy</button>
+                    </div>
+                </div>
+                <!-- CARD 2 end   -->
+
+                <!-- CARD 3 start   -->
+                <div class="product-listing__card">
+                    <div class="product-listing__card--img">
+                        <img src="./assets/img/product-listing3.webp" alt="">
+                    </div>
+                    <p class="product-listing__card--title">Yuva 5G</p>
+                    <p class="product-listing__card--detail">
+                        Lightning-fast Performance UNISOC T750 5G Processor | 16.58cm (6.528")...
+                    </p>
+                    <p class="product-listing__card--selling">₹ 9,499</p>
+                    <div class="product-listing__card--original">
+                        <p class="product-listing__card--original-mrp">MRP (incl. of all taxes): <span>₹ 11,499</span>
+                        </p>
+                        <p class="product-listing__card--original-discount">-17%</p>
+                    </div>
+                    <div class="product-listing__card--cta">
+                        <button class="learn">Learn More</button>
+                        <button class="buy">Buy</button>
+                    </div>
+                </div>
+                <!-- CARD 3 end   -->
+
+                <!-- CARD 4 start   -->
+                <div class="product-listing__card">
+                    <div class="product-listing__card--img">
+                        <img src="./assets/img/product-listing4.webp" alt="">
+                    </div>
+                    <p class="product-listing__card--title">O2</p>
+                    <p class="product-listing__card--detail">
+                        8GB+ 8GB* RAM / 128GB UFS 2.2 ROM | Octa-core UNISOC T616 Processor (A...
+                    </p>
+                    <p class="product-listing__card--selling"> ₹ 7999</p>
+                    <div class="product-listing__card--original">
+                        <p class="product-listing__card--original-mrp">MRP (incl. of all taxes): <span>₹ 9,999</span>
+                        </p>
+                        <p class="product-listing__card--original-discount">-20%</p>
+                    </div>
+                    <div class="product-listing__card--cta">
+                        <button class="learn">Learn More</button>
+                        <button class="buy">Buy</button>
+                    </div>
+                </div>
+                <!-- CARD 4 end   -->
+
+                <!-- CARD 5 start   -->
+                <div class="product-listing__card">
+                    <div class="product-listing__card--img">
+                        <img src="./assets/img/product-listing5.webp" alt="">
+                    </div>
+                    <p class="product-listing__card--title">Blaze Curve</p>
+                    <p class="product-listing__card--detail">
+                        16.94 cm (6.67") 120 Hz Punch Hole 3D Curved Amoled Display with Widev...
+                    </p>
+                    <p class="product-listing__card--selling"> ₹ 17,999</p>
+                    <div class="product-listing__card--original">
+                        <p class="product-listing__card--original-mrp">MRP (incl. of all taxes): <span>₹ 20,999</span>
+                        </p>
+                        <p class="product-listing__card--original-discount">-14%</p>
+                    </div>
+                    <div class="product-listing__card--cta">
+                        <button class="learn">Learn More</button>
+                        <button class="buy">Buy</button>
+                    </div>
+                </div>
+                <!-- CARD 5 end   -->
+
+                <!-- CARD 6 start   -->
+                <div class="product-listing__card">
+                    <div class="product-listing__card--img">
+                        <img src="./assets/img/product-listing6.webp" alt="">
+                    </div>
+                    <p class="product-listing__card--title">Yuva 3</p>
+                    <p class="product-listing__card--detail">
+                        4GB+ 4GB* RAM I 128GB UFS 2.2 ROM | UNISOC T606 Octa-core Processor (A...
+                    </p>
+                    <p class="product-listing__card--selling"> ₹ 6999</p>
+                    <div class="product-listing__card--original">
+                        <p class="product-listing__card--original-mrp">MRP (incl. of all taxes): <span>₹ 7,999</span>
+                        </p>
+                        <p class="product-listing__card--original-discount">-12%</p>
+                    </div>
+                    <div class="product-listing__card--cta">
+                        <button class="learn">Learn More</button>
+                        <button class="buy">Buy</button>
+                    </div>
+                </div>
+                <!-- CARD 6 end   -->
+
+                <!-- CARD 7 start   -->
+                <div class="product-listing__card">
+                    <div class="product-listing__card--img">
+                        <img src="./assets/img/product-listing7.webp" alt="">
+                    </div>
+                    <p class="product-listing__card--title">Yuva 3 Pro</p>
+                    <p class="product-listing__card--detail">
+                        8GB+ 8GB* RAM / 128GB UFS 2.2 ROM | UNISOC T616 Octa-core Processor (A...</p>
+                    <p class="product-listing__card--selling"> ₹ 7999</p>
+                    <div class="product-listing__card--original">
+                        <p class="product-listing__card--original-mrp">MRP (incl. of all taxes): <span>₹ 9,999</span>
+                        </p>
+                        <p class="product-listing__card--original-discount">-20%</p>
+                    </div>
+                    <div class="product-listing__card--cta">
+                        <button class="learn">Learn More</button>
+                        <button class="buy">Buy</button>
+                    </div>
+                </div>
+                <!-- CARD 7 end   -->
+
+                <!-- CARD 8 start   -->
+                <div class="product-listing__card">
+                    <div class="product-listing__card--img">
+                        <img src="./assets/img/product-listing8.webp" alt="">
+                    </div>
+                    <p class="product-listing__card--title">Blaze 2 5G</p>
+                    <p class="product-listing__card--detail">
+                        1st in the Segment Ring Light & Premium Glass Back Design | 16.55cm (6...
+                    </p>
+                    <p class="product-listing__card--selling"> ₹ 10,999</p>
+                    <div class="product-listing__card--original">
+                        <p class="product-listing__card--original-mrp">MRP (incl. of all taxes): <span>₹ 12,499</span>
+                        </p>
+                        <p class="product-listing__card--original-discount">-12%</p>
+                    </div>
+                    <div class="product-listing__card--cta">
+                        <button class="learn">Learn More</button>
+                        <button class="buy">Buy</button>
+                    </div>
+                </div>
+                <!-- CARD 8 end   -->
+
+                <!-- CARD 9 start   -->
+                <div class="product-listing__card">
+                    <div class="product-listing__card--img">
+                        <img src="./assets/img/product-listing9.webp" alt="">
+                    </div>
+                    <p class="product-listing__card--title">O1</p>
+                    <p class="product-listing__card--detail">
+                        16.66cm (6.56") 90Hz Display | (4GB+ 3GB*) RAM + 64GB ROM | 5000mAh ba...</p>
+                    <p class="product-listing__card--selling"> ₹ 6999</p>
+                    <div class="product-listing__card--original">
+                        <p class="product-listing__card--original-mrp">MRP (incl. of all taxes): <span>₹ 8,999</span>
+                        </p>
+                        <p class="product-listing__card--original-discount">-22%</p>
+                    </div>
+                    <div class="product-listing__card--cta">
+                        <button class="learn">Learn More</button>
+                        <button class="buy">Buy</button>
+                    </div>
+                </div>
+                <!-- CARD 9 end   -->
+
+                <!-- CARD 10 start   -->
+                <div class="product-listing__card">
+                    <div class="product-listing__card--img">
+                        <img src="./assets/img/product-listing10.webp" alt="">
+                    </div>
+                    <p class="product-listing__card--title">Blaze Pro 5G</p>
+                    <p class="product-listing__card--detail">
+                        Ultra-fast Processor MediaTek D6020 | 8GB+8GB* RAM l 128GB ROM | 50MP ...</p>
+                    <p class="product-listing__card--selling"> ₹ 12,999</p>
+                    <div class="product-listing__card--original">
+                        <p class="product-listing__card--original-mrp">MRP (incl. of all taxes): <span>₹ 14,999</span>
+                        </p>
+                        <p class="product-listing__card--original-discount">-13%</p>
+                    </div>
+                    <div class="product-listing__card--cta">
+                        <button class="learn">Learn More</button>
+                        <button class="buy">Buy</button>
+                    </div>
+                </div>
+                <!-- CARD 10 end   -->
+
+                <!-- CARD 11 start   -->
+                <div class="product-listing__card">
+                    <div class="product-listing__card--img">
+                        <img src="./assets/img/product-listing11.webp" alt="">
+                    </div>
+                    <p class="product-listing__card--title">Blaze 2 Pro</p>
+                    <p class="product-listing__card--detail">
+                        Ultra-fast UNISOC T616 Processor | 8GB+8GB* RAM I 128GB ROM | 50MP AI ...</p>
+                    <p class="product-listing__card--selling"> ₹ 10,999</p>
+                    <div class="product-listing__card--original">
+                        <p class="product-listing__card--original-mrp">MRP (incl. of all taxes): <span>₹ 12,499</span>
+                        </p>
+                        <p class="product-listing__card--original-discount">-12%</p>
+                    </div>
+                    <div class="product-listing__card--cta">
+                        <button class="learn">Learn More</button>
+                        <button class="buy">Buy</button>
+                    </div>
+                </div>
+                <!-- CARD 11 end   -->
+
+                <!-- CARD 12 start   -->
+                <div class="product-listing__card">
+                    <div class="product-listing__card--img">
+                        <img src="./assets/img/product-listing12.webp" alt="">
+                    </div>
+                    <p class="product-listing__card--title">Yuva 2</p>
+                    <p class="product-listing__card--detail">
+                        (3GB+ 3GB*) RAM + 64GB ROM | Unisoc T606 Octa-core Processor | 13MP Du...</p>
+                    <p class="product-listing__card--selling"> ₹ 6999</p>
+                    <div class="product-listing__card--original">
+                        <p class="product-listing__card--original-mrp">MRP (incl. of all taxes): <span>₹ 8,499</span>
+                        </p>
+                        <p class="product-listing__card--original-discount">-17%</p>
+                    </div>
+                    <div class="product-listing__card--cta">
+                        <button class="learn">Learn More</button>
+                        <button class="buy">Buy</button>
+                    </div>
+                </div>
+                <!-- CARD 12 end   -->
+
+                <!-- CARD 13 start   -->
+                <div class="product-listing__card">
+                    <div class="product-listing__card--img">
+                        <img src="./assets/img/product-listing13.webp" alt="">
+                    </div>
+                    <p class="product-listing__card--title">Yuva</p>
+                    <p class="product-listing__card--detail">
+                        MediaTek Helio G25 OctaCore Processor | 8MP Dual Camera + 5MP Selfie C...</p>
+                    <p class="product-listing__card--selling"> ₹ 7999</p>
+                    <div class="product-listing__card--original">
+                        <p class="product-listing__card--original-mrp">MRP (incl. of all taxes): <span>₹ 9,999</span>
+                        </p>
+                        <p class="product-listing__card--original-discount">-20%</p>
+                    </div>
+                    <div class="product-listing__card--cta">
+                        <button class="learn">Learn More</button>
+                        <button class="buy">Buy</button>
+                    </div>
+                </div>
+                <!-- CARD 13 end   -->
+
+                <!-- CARD 14 start   -->
+                <div class="product-listing__card">
+                    <div class="product-listing__card--img">
+                        <img src="./assets/img/product-listing14.webp" alt="">
+                    </div>
+                    <p class="product-listing__card--title">AGNI 2</p>
+                    <p class="product-listing__card--detail">
+                        MediaTek Dimensity 7050 Processor | 120Hz FHD+ Curved AMOLED Display |...</p>
+                    <p class="product-listing__card--selling"> ₹ 19,999</p>
+                    <div class="product-listing__card--original">
+                        <p class="product-listing__card--original-mrp">MRP (incl. of all taxes): <span>₹ 25,999</span>
+                        </p>
+                        <p class="product-listing__card--original-discount">-23%</p>
+                    </div>
+                    <div class="product-listing__card--cta">
+                        <button class="learn">Learn More</button>
+                        <button class="buy">Buy</button>
+                    </div>
+                </div>
+                <!-- CARD 14 end   -->
+
+                <!-- CARD 15 start   -->
+                <div class="product-listing__card">
+                    <div class="product-listing__card--img">
+                        <img src="./assets/img/product-listing15.webp" alt="">
+                    </div>
+                    <p class="product-listing__card--title">Blaze 2</p>
+                    <p class="product-listing__card--detail">
+                        16.55cm (6.5") 90Hz Punch Hole Display | Ultra-fast Unisoc T616 Proces...</p>
+                    <p class="product-listing__card--selling"> ₹ 8999</p>
+                    <div class="product-listing__card--original">
+                        <p class="product-listing__card--original-mrp">MRP (incl. of all taxes): <span>₹ 10,999</span>
+                        </p>
+                        <p class="product-listing__card--original-discount">-18%</p>
+                    </div>
+                    <div class="product-listing__card--cta">
+                        <button class="learn">Learn More</button>
+                        <button class="buy">Buy</button>
+                    </div>
+                </div>
+                <!-- CARD 15 end   -->
+
+                <!-- CARD 16 start   -->
+                <div class="product-listing__card">
+                    <div class="product-listing__card--img">
+                        <img src="./assets/img/product-listing16.webp" alt="">
+                    </div>
+                    <p class="product-listing__card--title">Blaze 5G 8GB</p>
+                    <p class="product-listing__card--detail">
+                        6GB RAM+ 3GB Virtual RAM + UFS 2.2 128GB ROM | MediaTek Dimensity 700 ...</p>
+                    <p class="product-listing__card--selling"> ₹ 12,999</p>
+                    <div class="product-listing__card--original">
+                        <p class="product-listing__card--original-mrp">MRP (incl. of all taxes): <span>₹ 16,499</span>
+                        </p>
+                        <p class="product-listing__card--original-discount">-21%</p>
+                    </div>
+                    <div class="product-listing__card--cta">
+                        <button class="learn">Learn More</button>
+                        <button class="buy">Buy</button>
+                    </div>
+                </div>
+                <!-- CARD 16 end   -->
+
+                <!-- CARD 17 start   -->
+                <div class="product-listing__card">
+                    <div class="product-listing__card--img">
+                        <img src="./assets/img/product-listing17.webp" alt="">
+                    </div>
+                    <p class="product-listing__card--title">AGNI 5G</p>
+                    <p class="product-listing__card--detail">
+                        Powered by MediaTek Dimensity 810 - 5G | Powerful 5000mAh battery | 64...</p>
+                    <p class="product-listing__card--selling"> ₹ 17,999</p>
+                    <div class="product-listing__card--original">
+                        <p class="product-listing__card--original-mrp">MRP (incl. of all taxes): <span>₹ 23,999</span>
+                        </p>
+                        <p class="product-listing__card--original-discount">-25%</p>
+                    </div>
+                    <div class="product-listing__card--cta">
+                        <button class="learn">Learn More</button>
+                        <button class="buy">Buy</button>
+                    </div>
+                </div>
+                <!-- CARD 17 end   -->
+
+                <!-- CARD 18 start   -->
+                <div class="product-listing__card">
+                    <div class="product-listing__card--img">
+                        <img src="./assets/img/product-listing18.webp" alt="">
+                    </div>
+                    <p class="product-listing__card--title">Blaze 5G</p>
+                    <p class="product-listing__card--detail">
+                        Supports All Indian 5G bands* | 2K Video Recording with EIS Support | ...</p>
+                    <p class="product-listing__card--selling"> ₹ 10,999</p>
+                    <div class="product-listing__card--original">
+                        <p class="product-listing__card--original-mrp">MRP (incl. of all taxes): <span>₹ 14,999</span>
+                        </p>
+                        <p class="product-listing__card--original-discount">-26%</p>
+                    </div>
+                    <div class="product-listing__card--cta">
+                        <button class="learn">Learn More</button>
+                        <button class="buy">Buy</button>
+                    </div>
+                </div>
+                <!-- CARD 18 end   -->
+
+                <!-- CARD 19 start   -->
+                <div class="product-listing__card">
+                    <div class="product-listing__card--img">
+                        <img src="./assets/img/product-listing19.webp" alt="">
+                    </div>
+                    <p class="product-listing__card--title">Blaze Pro</p>
+                    <p class="product-listing__card--detail">
+                        Premium Frosted Glass Back Design | 50MP Triple AI Rear Camera | 64GB ...</p>
+                    <p class="product-listing__card--selling"> ₹ 10,499</p>
+                    <div class="product-listing__card--original">
+                        <p class="product-listing__card--original-mrp">MRP (incl. of all taxes): <span>₹ 12,999</span>
+                        </p>
+                        <p class="product-listing__card--original-discount">-19%</p>
+                    </div>
+                    <div class="product-listing__card--cta">
+                        <button class="learn">Learn More</button>
+                        <button class="buy">Buy</button>
+                    </div>
+                </div>
+                <!-- CARD 19 end   -->
+
+                <!-- CARD 20 start   -->
+                <div class="product-listing__card">
+                    <div class="product-listing__card--img">
+                        <img src="./assets/img/product-listing20.webp" alt="">
+                    </div>
+                    <p class="product-listing__card--title">X2</p>
+                    <p class="product-listing__card--detail">
+                        Big 16.51cm (6.5”) IPS HD+ notch display | | Loud Audio speaker | FPS+...</p>
+                    <p class="product-listing__card--selling"> ₹ 6999</p>
+                    <div class="product-listing__card--original">
+                        <p class="product-listing__card--original-mrp">MRP (incl. of all taxes): <span>₹ 7,999</span>
+                        </p>
+                        <p class="product-listing__card--original-discount">-12%</p>
+                    </div>
+                    <div class="product-listing__card--cta">
+                        <button class="learn">Learn More</button>
+                        <button class="buy">Buy</button>
+                    </div>
+                </div>
+                <!-- CARD 20 end   -->
+
+                <!-- CARD 21 start   -->
+                <div class="product-listing__card">
+                    <div class="product-listing__card--img">
+                        <img src="./assets/img/product-listing21.webp" alt="">
+                    </div>
+                    <p class="product-listing__card--title">Yuva 2 Pro</p>
+                    <p class="product-listing__card--detail">
+                        4GB RAM + 3GB Virtual RAM + 64GB ROM | MediaTek Helio G37 Octa-core Pr...</p>
+                    <p class="product-listing__card--selling"> ₹ 7999</p>
+                    <div class="product-listing__card--original">
+                        <p class="product-listing__card--original-mrp">MRP (incl. of all taxes): <span>₹ 9,999</span>
+                        </p>
+                        <p class="product-listing__card--original-discount">-20%</p>
+                    </div>
+                    <div class="product-listing__card--cta">
+                        <button class="learn">Learn More</button>
+                        <button class="buy">Buy</button>
+                    </div>
+                </div>
+                <!-- CARD 21 end   -->
+
+                <!-- CARD 22 start   -->
+                <div class="product-listing__card">
+                    <div class="product-listing__card--img">
+                        <img src="./assets/img/product-listing22.webp" alt="">
+                    </div>
+                    <p class="product-listing__card--title">Storm 5G</p>
+                    <p class="product-listing__card--detail">
+                        17.22cm (6.78") 120Hz Punch Hole Display with Widevine L1 support | Ul...</p>
+                    <p class="product-listing__card--selling"> ₹ 13,499</p>
+                    <div class="product-listing__card--original">
+                        <p class="product-listing__card--original-mrp">MRP (incl. of all taxes): <span>₹ 14,999</span>
+                        </p>
+                        <p class="product-listing__card--original-discount">-10%</p>
+                    </div>
+                    <div class="product-listing__card--cta">
+                        <button class="learn">Learn More</button>
+                        <button class="buy">Buy</button>
+                    </div>
+                </div>
+                <!-- CARD 22 end   -->
+
+            </div>
+
+            <!-- PRODUCTS LISTING end   -->
+
+        </div>
+
+        <!-- FOOTER start -->
+
+        <footer class="footer">
+            <ul class="footer-accordion">
+                <li>
+                    <input type="checkbox" name="footer-accordion" id="support" checked>
+                    <label for="support">Support</label>
+                    <div class="content">
+                        <p>Contact Us</p>
+                        <p>Sales Enquiry</p>
+                        <p>Stores & Dealers</p>
+                        <p>Careers</p>
+                        <p>Terms & Conditions</p>
+                        <p>Privacy Policy</p>
+                        <p>Quality Policy</p>
+                    </div>
+                </li>
+
+                <li>
+                    <input type="checkbox" name="footer-accordion" id="about">
+                    <label for="about">About Us</label>
+                    <div class="content">
+                        <p>About Lava</p>
+                        <p>Videos</p>
+                        <p>Press & Media</p>
+                        <p>Speak Up</p>
+                        <p>Investor Relations</p>
+                        <p>FAQ’s</p>
+                    </div>
+                </li>
+
+                <li>
+                    <input type="checkbox" name="footer-accordion" id="care">
+                    <label for="care">Lava Care</label>
+                    <div class="content">
+                        <p>Service@Home</p>
+                        <p>Extended Warranty</p>
+                        <p>Spare Parts Price List</p>
+                        <p>User Manual</p>
+                        <p>E-waste Management</p>
+                        <p>Alumni</p>
+                        <p>CSR Policy</p>
+                    </div>
+                </li>
+
+                <li>
+                    <input type="checkbox" name="footer-accordion" id="follow">
+                    <label for="follow">Follow Us</label>
+                    <div class="content">
+                        <p> <i class="fa-brands fa-instagram"></i></p>
+                        <p> <i class="fa-brands fa-facebook"></i></p>
+                        <p> <i class="fa-brands fa-linkedin"></i></p>
+                        <p> <i class="fa-brands fa-x-twitter"></i></p>
+                        <p><i class="fa-brands fa-youtube"></i></p>
+                    </div>
+                </li>
+            </ul>
+            <div class="footer-disclaimer">
+                <p><span>Disclaimer:</span>Product images, features, colors and specifications shown here are for
+                    representational purpose
+                    only and the
+                    actual may vary. <span>Copyright © Lava International Limited</span></p>
+                <p>'LAVA' is a registered trademark, wholly owned by M/s Lava International Limited. Any imitation of
+                    trademark
+                    and/or
+                    label is illegal and is a punishable offence.</p>
+            </div>
+        </footer>
+
+        <!-- FOOTER end -->
+
+    </div>
+
+    <!-- PRODUCT LISTING PAGE end  -->
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
