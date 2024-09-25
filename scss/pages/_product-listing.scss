@@ -102,28 +102,31 @@
       @include respond-to(md) {
         flex-direction: column;
       }
-      button {
-        @extend %button-rounded;
+      a {
         width: 50%;
-        border: 1px solid #2c2c2c;
         @include respond-to(md) {
           width: 100%;
         }
-      }
-      .learn {
-        background-color: transparent;
-      }
-      .learn:hover {
-        background-color: #2c2c2c;
-        color: #fff;
-      }
-      .buy {
-        background-color: #2c2c2c;
-        color: #fff;
-      }
-      .buy:hover {
-        background-color: transparent;
-        color: #2c2c2c;
+        button {
+          @extend %button-rounded;
+          width: 100%;
+          border: 1px solid #2c2c2c;
+        }
+        .learn {
+          background-color: transparent;
+        }
+        .learn:hover {
+          background-color: #2c2c2c;
+          color: #fff;
+        }
+        .buy {
+          background-color: #2c2c2c;
+          color: #fff;
+        }
+        .buy:hover {
+          background-color: transparent;
+          color: #2c2c2c;
+        }
       }
     }
   }

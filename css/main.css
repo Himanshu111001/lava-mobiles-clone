@@ -31,7 +31,7 @@ li {
   transition: all 0.3s ease;
 }
 
-.product-listing__card--cta button, .service__card--detail-btn, .banner__item .overlay-btn {
+.product-listing__card--cta a button, .service__card--detail-btn, .banner__item .overlay-btn {
   padding: 10px 25px;
   border-radius: 8px;
   outline: none;
@@ -1203,27 +1203,30 @@ li {
     flex-direction: column;
   }
 }
-.product-listing__card--cta button {
+.product-listing__card--cta a {
   width: 50%;
-  border: 1px solid #2c2c2c;
 }
 @media (max-width: 768px) {
-  .product-listing__card--cta button {
+  .product-listing__card--cta a {
     width: 100%;
   }
 }
-.product-listing__card--cta .learn {
+.product-listing__card--cta a button {
+  width: 100%;
+  border: 1px solid #2c2c2c;
+}
+.product-listing__card--cta a .learn {
   background-color: transparent;
 }
-.product-listing__card--cta .learn:hover {
+.product-listing__card--cta a .learn:hover {
   background-color: #2c2c2c;
   color: #fff;
 }
-.product-listing__card--cta .buy {
+.product-listing__card--cta a .buy {
   background-color: #2c2c2c;
   color: #fff;
 }
-.product-listing__card--cta .buy:hover {
+.product-listing__card--cta a .buy:hover {
   background-color: transparent;
   color: #2c2c2c;
 }
