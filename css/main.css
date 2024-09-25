@@ -49,6 +49,78 @@ li {
   transition: all 0.3s ease;
 }
 
+.carousel {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+@media (max-width: 768px) {
+  .carousel {
+    margin-bottom: 0px;
+  }
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  position: relative;
+  aspect-ratio: 21/9;
+  min-width: 100%;
+}
+@media (max-width: 768px) {
+  .carousel-item {
+    aspect-ratio: 4/5;
+  }
+}
+
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .carousel-video-desktop {
+    display: none;
+  }
+}
+
+.carousel-video-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .carousel-video-mobile {
+    display: block;
+  }
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
 .footer {
   padding: 20px 40px;
   background-color: #000000;
