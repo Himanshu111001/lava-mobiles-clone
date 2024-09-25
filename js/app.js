@@ -28,3 +28,6 @@ function showMobileNavButton() {
 showMobileNavButton();
 
 window.addEventListener("resize", showMobileNavButton);
+
+//AOS
+AOS.init();
