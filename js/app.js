@@ -28,6 +28,9 @@ showMobileNavButton();
 
 window.addEventListener("resize", showMobileNavButton);
 
+//AOS
+AOS.init();
+
 //CAROUSEL
 const track = document.querySelector(".carousel-track");
 const items = Array.from(track.children);
@@ -61,6 +64,3 @@ function moveToPrev() {
 
 nextButton.addEventListener("click", moveToNext);
 prevButton.addEventListener("click", moveToPrev);
-
-//AOS
-AOS.init();
